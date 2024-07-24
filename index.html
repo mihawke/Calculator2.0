@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="display">
+            <div class="equation">
+                <span id="firstInput" class="displayElement"></span>
+                <span id="operator" class="displayElement"></span>
+                <span id="secondInput" class="displayElement"></span>
+                <span id="equal" class="displayElement">=</span>
+                <span id="result" class="displayElement"></span>
+            </div>
+        </div>
+        <div class="btnGrid">
+            <div style="display: flex; flex: 4; flex-direction: column;">
+                <div class="btnRow">
+                    <button class="operatorBtn" id="divide">/</button>
+                    <button class="operatorBtn" id="multiply">*</button>
+                    <button class="operatorBtn" id="substract">-</button>
+                </div>
+                <div class="btnRow">
+                    <button class="numBtn" id="btn7">7</button>
+                    <button class="numBtn" id="btn8">8</button>
+                    <button class="numBtn" id="btn9">9</button>
+                </div>
+                <div class="btnRow">
+                    <button class="numBtn" id="btn4">4</button>
+                    <button class="numBtn" id="btn5">5</button>
+                    <button class="numBtn" id="btn6">6</button>
+                </div>
+                <div class="btnRow">
+                    <button class="numBtn" id="btn1">1</button>
+                    <button class="numBtn" id="btn2">2</button>
+                    <button class="numBtn" id="btn3">3</button>
+                </div>
+                <div class="btnRow" style="flex:1/2;">
+                    <button class="numBtn" id="btn0">0</button>
+                    <button class="numBtn" id="dot">.</button>
+                    <button class="deleteBtn" id="delete">Del</button>
+                </div>
+            </div>
+            <div class="verticalBtns" style="display: flex;flex: 1; flex-direction: column;">
+                <button class="operatorBtn" style="height: 100%;" id="add">+</button>
+                <button class="evaluateBtn" id="evaluate" style="height: 100%;">=</button>
+            </div>
+        </div>
+    </div>
+    <div style="color: gray;">
+        <p>Bugs:
+            <ul>
+                <li><p>Clicking evaluate before entering any value gives undefined result</p></li>
+                <li><p>Initial values are NaN</p></li>
+            </ul>
+    </div>
+</body>
+
+</html>
